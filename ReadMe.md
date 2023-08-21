@@ -58,7 +58,7 @@ GETリクエストに対する処理を行います。
 
 ### URL
 
-https://sample.com/fib?n=99
+https://fib-api-4jpp.onrender.com/fib
 
 ### テスト
 
