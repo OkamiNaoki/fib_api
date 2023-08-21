@@ -19,38 +19,37 @@ djangoを使ってWebAPIのテンプレートを作成しました。
         -tests.py 　テストクラス
         -views.py 　入力された数字の処理
 
-## fib
 
-### tests(ユニットテスト)
+## tests(ユニットテスト)
 
 このtests.pyでは主に3つのテストを行います。
 
-1. 正常な数値の入力値に対するテスト(test_valid_input)
+### 正常な数値の入力値に対するテスト(test_valid_input)
 
 99が入力された際のフィボナッチ数の値が正確に返されるかどうか
 
-2. 不正な数値の入力値に対するテスト(test_invalid_input_string)
+### 不正な数値の入力値に対するテスト(test_invalid_input_string)
 
 不正な数値入力-5に対してステータスコード400とInvalid Value.が返されるかどうか
 
-3. 不正な文字列の入力値に対するテスト(test_invalid_input_negative)
+### 不正な文字列の入力値に対するテスト(test_invalid_input_negative)
 
 不正な文字列入力"abc"に対してステータスコード400とBad Request.が返されるかどうか
 
-### views
+## views
 
 このviews.pyでは主に3つの関数から出来ています。
 
-1. get
+### get
 
 GETリクエストに対する処理を行います。
 指定されたnから場合分けを行い2,3の処理を場合に合わせて呼び出し行います
 
-2. calculate_fibonacci
+### calculate_fibonacci
 
 フィボナッチ数を計算し、返します。
 
-3. error_response
+### error_response
 
 エラーのステータスコードとメッセージをJSON形式で返します。
 
